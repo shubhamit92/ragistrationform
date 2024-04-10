@@ -1,6 +1,7 @@
 let users=[];
 let alertdiv=document.getElementById('alert');
 let usercontainer=document.getElementById('user');
+let coutuser =0;
 let ragistration=()=>{
     let name=document.getElementById('name').value;
     let email=document.getElementById('email').value
@@ -10,13 +11,16 @@ let ragistration=()=>{
     let coutemail=users.filter((user)=>{
         return user.email==email;
     })
-    console.log( coutemail);
+   // console.log( coutemail);
     let tempuser={
         name:name,
         email:email
     }
     if(coutemail.length==0){
         users.push(tempuser);
+        document.getElementById('total').innerText= users.length
+        console.log(users.length)
+
         alertdiv.classList.remove('d-none');
         alertdiv.classList.add('alert');
         alertdiv.classList.add('success');
@@ -56,5 +60,6 @@ let ragistration=()=>{
         namecon.innerText=user.name;
         emailcon.innerText=user.email;
     })
-    console.log(users)
+   console.log(users);
+   console.log(users.length);
 }
