@@ -1,0 +1,79 @@
+body{
+    margin: 50px auto;
+}
+
+
+.card{
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 12px;
+    border: none;
+}
+.img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+.input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: none;
+}
+.btn{
+    width: 100%;
+    padding: 12px 25px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.alert{
+    width: 180px;
+    border: 1px solid lightgray;
+    padding: 8px 15px;
+    border-radius: 10px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    right: 80px;
+    margin-top: -100px;
+    animation-name: alert;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes alert{
+    100%{
+        margin-top: 150px;
+    }
+}
+
+.success{
+    background-color: rgb(198, 231, 198);
+    color: green;
+    border: none;
+}
+.denger{
+    background-color: rgb(240, 211, 211);
+    color: rgb(220, 54, 54);
+    border: none;
+}
+.d-none{
+    display: none;
+}
+.user{
+    width: 500px;
+    background-color: rgb(224, 216, 216);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
