@@ -18,8 +18,8 @@ let ragistration=()=>{
     }
     if(coutemail.length==0){
         users.push(tempuser);
-        document.getElementById('total').innerText= users.length
-        console.log(users.length)
+        document.getElementById('total').innerText= `Total Ragisterd users:-${users.length}`
+        //console.log(users.length)
 
         alertdiv.classList.remove('d-none');
         alertdiv.classList.add('alert');
@@ -60,6 +60,6 @@ let ragistration=()=>{
         namecon.innerText=user.name;
         emailcon.innerText=user.email;
     })
-   console.log(users);
-   console.log(users.length);
+   //console.log(users);
+  // console.log(users.length);
 }
